@@ -25,6 +25,8 @@ If this happens, wait a few moments and retry your request.
 
 We recommend implementing retry logic with a short delay to handle these temporary availability issues gracefully.
 
+Demo video : [Demo] (https://www.youtube.com/watch?v=fV4uUbkN4FE)
+
 ## What is implemented
 
 - **Persistent outcomes:** SQLite database with agreements, acceptance criteria, evidence and audit events. Set `OUTCOME_DB_PATH` to a persistent mounted volume in production.
