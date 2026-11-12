@@ -6,7 +6,7 @@ OUTCOME turns a natural-language work request into an agreement with measurable 
 
 This repository keeps the supplied Next.js frontend and adds the backend as Next.js Route Handlers. No separate Express service is required.
 
-try it out : [Outcome]([https://example.co](https://outcome-75u6.onrender.com/)m)
+try it out : [Outcome](https://outcome-75u6.onrender.com/)
 
 Temporary Model Availability Issues
 
