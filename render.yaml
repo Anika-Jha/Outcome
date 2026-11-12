@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: outcome-app
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: OUTCOME_DB_PATH
+        value: /var/data/outcome.sqlite
+      - key: PAYPAL_ENVIRONMENT
+        value: sandbox
+      - key: NEXT_PUBLIC_PAYPAL_ENVIRONMENT
+        value: sandbox
+      - key: NEXT_PUBLIC_PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OUTCOME_ACCESS_PASSWORD
+        sync: false
+      - key: OUTCOME_SESSION_SECRET
+        sync: false
+    disk:
+      name: outcome-data
+      mountPath: /var/data
+      sizeGB: 1
