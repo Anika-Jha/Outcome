@@ -25,7 +25,6 @@ If this happens, wait a few moments and retry your request.
 
 We recommend implementing retry logic with a short delay to handle these temporary availability issues gracefully.
 
-Demo video : [Demo] (https://www.youtube.com/)
 
 ## What is implemented
 
