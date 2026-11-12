@@ -6,6 +6,25 @@ OUTCOME turns a natural-language work request into an agreement with measurable 
 
 This repository keeps the supplied Next.js frontend and adds the backend as Next.js Route Handlers. No separate Express service is required.
 
+try it out : [Outcome]([https://example.co](https://outcome-75u6.onrender.com/)m)
+
+Temporary Model Availability Issues
+
+You may occasionally encounter the following message:
+
+This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+
+This message indicates that the AI model provider is experiencing unusually high traffic or temporary capacity constraints.
+
+Please note:
+
+This is generally a temporary issue on the model provider's side.
+It does not necessarily indicate a problem with the application or its configuration.
+Requests may fail temporarily during periods of high demand.
+If this happens, wait a few moments and retry your request.
+
+We recommend implementing retry logic with a short delay to handle these temporary availability issues gracefully.
+
 ## What is implemented
 
 - **Persistent outcomes:** SQLite database with agreements, acceptance criteria, evidence and audit events. Set `OUTCOME_DB_PATH` to a persistent mounted volume in production.
